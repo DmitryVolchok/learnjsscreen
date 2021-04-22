@@ -14,17 +14,17 @@ export class HeaderComponent implements OnInit {
   public myColor: string = 'red';
   public myClass: string = 'red';
   constructor() {
-    setTimeout(() => {
-      this.myClass = 'green';
-      setTimeout(() => {
-        this.myClass = 'blue';
-      }, 2000);
-    }, 2000);
+    // setTimeout(() => {
+    //   this.myClass = 'green';
+    //   setTimeout(() => {
+    //     this.myClass = 'blue';
+    //   }, 2000);
+    // }, 2000);
   }
 
-  random() {
-    return Math.random();
-  }
+  // random() {
+  //   return Math.random();
+  // }
 
   ngOnInit(): void {}
 }

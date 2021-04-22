@@ -1,0 +1,5 @@
+<p>contacts works!</p>
+<button on-click="showContacts($event)">Show Contact List</button>
+<app-contact-item
+  (saveContactPerson)="catchCustomEvent($event)"
+></app-contact-item>
