@@ -1,5 +1,10 @@
 <p>contacts works!</p>
+<!-- Event-->
 <button on-click="showContacts($event)">Show Contact List</button>
-<app-contact-item
-  (saveContactPerson)="catchCustomEvent($event)"
-></app-contact-item>
+<!-- <p (saveContactPerson)="catchCustomEvent($event)"></p> -->
+<!-- add custom events-->
+<app-contact-item [(name)]="contactPerson"> </app-contact-item>
+<input type="text" />
+<p>{{ contactPerson }}</p>
+
+<!-- [(ngModel)]="contactPerson"  -->
