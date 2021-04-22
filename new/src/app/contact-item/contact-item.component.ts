@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-contact-item',
@@ -16,5 +16,13 @@ export class ContactItemComponent implements OnInit {
 
   showContactPerson(): void {
     this.saveContactPerson.emit(this.contactPerson);
+  }
+
+  @Input() name: string = 'unknown';
+  @Output() nameChange = new EventEmitter<String>();
+
+  showPersonContact(): void {
+    this.name = 'Dimasik';
+    this.nameChange.emit(this.name);
   }
 }
