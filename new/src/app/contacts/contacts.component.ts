@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contacts',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.css'],
 })
 export class ContactsComponent implements OnInit {
+  public contactPerson: string;
   public contact = {
     name: 'Hedeeee',
     age: '243',
